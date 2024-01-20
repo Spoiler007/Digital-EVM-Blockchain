@@ -1,7 +1,9 @@
 .ac-list-wrapper {
   width: 100%;
   height: 100vh;
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
+  /* border: 1px solid red; */
+  background-image: url(/bg4.jpg);
 }
 .ac-list-container {
   height: 100vh;
@@ -10,6 +12,50 @@
   align-items: center;
   flex-direction: column;
   gap: 8px;
+  color: white;
+}
+.home-box {
+  /* border: 1px solid rgb(255, 64, 0); */
+  padding: 25px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  animation: first .8s linear alternate;
+}
+@keyframes first {
+  0% {
+    opacity: 0;
+    scale: 0.98;
+  }
+  60% {
+    opacity: 0;
+    scale: 0.98;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.connect-btn {
+padding: 13.5px;
+border-radius: 25px;
+ 
+background: rgba(255, 255, 255, 0.253);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.4px);
+-webkit-backdrop-filter: blur(9.4px);
+border: 1px solid rgba(255, 255, 255, 0.32);
+  
 }
 .ac-list-title {
   font-size: 54px;
@@ -29,11 +75,13 @@
 
 .innerBox {
   padding: 10px;
-  border: 2px solid #ccc;
+  border: 2px solid #eaeaea;
+  background: transparent;
   outline: none;
   cursor: pointer;
   transition: border-color 0.2s;
   border-radius: 8px;
+  color: white;
 }
 
 .innerBox:hover {
@@ -42,7 +90,7 @@
 }
 
 .note {
-  color: rgb(236, 102, 102);
+  color: rgb(255, 255, 255, 0.6);
   font-size: 10px;
   font-weight: 400;
 }
