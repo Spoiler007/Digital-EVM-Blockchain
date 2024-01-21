@@ -39,7 +39,9 @@ const AccountList = ({ saveAccount }) => {
     <div className="ac-list-wrapper">
       <Navigation account={account} />
       <div className="ac-list-container">
-        <img src="/vote.gif" alt="voteGIF" autoPlay width={240} />
+
+      <div className="home-box">
+        <img src="/hm.png" alt="voteGIF" autoPlay width={240} />
         <h1 className="ac-list-title">
           Revolutionalitised <span className="span">voting system</span>
           <br />
@@ -60,6 +62,7 @@ const AccountList = ({ saveAccount }) => {
         <p className="note">
           *Go to Menu: Register for New candidate & Voter for a standin person
         </p>
+        </div>
       </div>
     </div>
   );
