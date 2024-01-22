@@ -17,10 +17,34 @@ const voterRegistration = async(e)=>{
   const age = document.querySelector("#age").value;
   const gender = document.querySelector("#gender").value;
 
+  const voterData = {
+    gender
+  }
 
-  await contract.methods.voterRegister(name,age,gender).send({from:account,gas:480000})
-  alert("Registration Successful")
+  try{
+    const res = await fetch("http://localhost:3000/api/voter-verification",{
+    method:"POST",
+    headers:{
+      "content-type":"application/json"
+    },
+    body:JSON.stringify(voterData)
+    })
+    const data = await res.json()
+    // console.log(data)
+    if(data.message==="Gender Valid"){  
+      await contract.methods.voterRegister(name,age,gender).send({from:account,gas:480000})
+      alert("Registration Successful")
+    }
+    else{
+      alert("Registration Not Successful")
+    }
+  }
+  catch(error){
+console.log(error)
+  }
+
 }
+
 
   return (
     <>
