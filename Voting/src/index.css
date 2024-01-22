@@ -17,6 +17,14 @@
   box-sizing: border-box;
   font-family: var(font-family);
 }
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(52, 52, 52);
+  border-radius: 10px;
+}
 /* loader */
 
 .whole-box{

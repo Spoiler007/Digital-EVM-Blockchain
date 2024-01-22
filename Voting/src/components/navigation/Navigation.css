@@ -20,6 +20,7 @@ nav {
   margin-top: 10px;
   opacity: 1;
   animation: irst .4s linear alternate;
+  /* position: absolute; */
 }
 @keyframes irst {
   0% {
@@ -49,11 +50,13 @@ nav ul {
   color: #c9c9c9;
   padding: 10px 14px;
   position: relative;
-  transition: color 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  /* border: 1px solid red; */
 }
 
 .nav-link:hover {
   color: #ffffff;
+  letter-spacing: .5px;
 }
 
 .nav-link::before {
@@ -61,7 +64,7 @@ nav ul {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: var(--color-blue-dark);
+  /* background-color: var(--color-blue-dark); */
   bottom: -23px;
   left: 50%;
   transform: translateX(-50%);

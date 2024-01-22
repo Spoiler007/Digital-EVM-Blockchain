@@ -13,8 +13,8 @@ const VotingStatus = () => {
   },[contract])
   const statusColor = voteStatus === "Voting in progress" ? "#2DFF2D" : "red";
   return (
-    <div style={{ display: "flex" }}>
-      Vote Status :
+    <div style={{ display: "flex",color: "#c9c9c9" }}>
+      Vote Status : 
       <div style={{ color: statusColor }}>
         {voteStatus === null ? "no status" : voteStatus}
       </div>

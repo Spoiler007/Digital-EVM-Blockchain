@@ -1,29 +1,34 @@
 .reg-cand-wrapper {
   width: 100%;
   height: 84vh;
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 160px !important;
+  padding-top: 180px !important;
+  /* border: 1px solid red; */
+  gap: 34px;
 }
 
 .reg-img-wrapper {
-  height: 560px;
+  height: 520px;
   width: 480px;
-  background: rgb(162, 207, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(80, 176, 243, 1) 0%,
-    rgb(191, 220, 251) 100%
-  );
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); */
   z-index: 2;
+  background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    animation: first .8s linear alternate;
+    font-family: "Poppins", sans-serif;
 }
 .reg-img-wrapper h1 {
   text-align: center;
@@ -38,19 +43,28 @@
   margin-top: 24px;
 }
 .can-reg-form {
-  height: 560px;
+  height: 520px;
   width: 480px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 36px;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    animation: first .8s linear alternate;
+    font-family: "Poppins", sans-serif;
+  /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2); */
 }
 .can-reg-form h3 {
   font-weight: 400;
   font-size: 28px;
   margin-bottom: 32px;
+  color: white;
 }
 .can-reg-form label {
   display: block;
@@ -60,30 +74,38 @@
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
+  color: white;
 }
 
 .can-reg-form input {
   width: 100%;
-  padding: 14px;
+  padding: 10px;
   margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
   font-size: 14px;
+  background-color: transparent;
+  color: white;
 }
 
 .regBtn {
   width: 100%;
-  background-color: var(--color-blue);
   color: white;
   padding: 14px 16px;
   border: none;
   border-radius: 40px;
   cursor: pointer;
   font-size: 14px;
-  margin-top: 12px;
+  margin-top: 20px;
   margin-bottom: 32px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: 1px solid white;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.2s ease-in-out;
 }
 
 .regBtn:hover {

@@ -5,6 +5,7 @@ import "./VoterDisplay.css";
 const VoterDisplay = () => {
   return (
     <div className="table-container">
+    <div className="table-box">
       <table className="voter-table">
         <thead>
           <tr>
@@ -17,6 +18,7 @@ const VoterDisplay = () => {
           
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ const CandidateDisplay = () => {
   
   return (
     <div className="table-container">
+    <div className="candidate-box">
       <table className="voter-table">
         <thead>
           <tr>
@@ -17,6 +18,7 @@ const CandidateDisplay = () => {
       
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

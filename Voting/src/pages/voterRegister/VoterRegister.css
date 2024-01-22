@@ -3,24 +3,52 @@
   position: fixed;
   height: 30px;
   width: 100%;
-  background-color: rgb(237, 241, 242);
+  /* background-color: rgb(237, 241, 242); */
   /* background-color: var(--color-blue-dark); */
-  color: var(--color-blue-dark);
-  padding-top: 100px;
+  /* color: var(--color-blue-dark); */
+  padding-top: 80px;
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid red; */
+  animation: first .8s linear alternate;
 }
+.back-all{
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 100%;
+  height: auto;
+  /* background-color: rgb(181, 2, 142); */
+  background-color: black;
+  z-index: -1;
+}
+/* .voter-whole{
+  
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,28,128,0.9809173669467787) 100%);
+  
+} */
 .voter-reg-wrapper {
   width: 100%;
-  height: 84vh;
-  background-color: var(--color-bg);
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  padding-top: 180px;
+  gap: 34px;
+  /* padding-bottom: 30px; */
+  padding-top: 140px;
+  /* border: 1px solid red; */
+}
+.vote-form{
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  animation: first .8s linear alternate;
+  font-family: "Poppins", sans-serif;
 }
 
 .voter-form {
@@ -31,12 +59,38 @@
   justify-content: center;
   align-items: flex-start;
   padding: 0 36px;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  animation: first .8s linear alternate;
+  font-family: "Poppins", sans-serif;
+}
+.vote-form h1{
+  color: white;
+  text-align: center;
+  
+}
+.vote-form input{
+  background-color: transparent;
+  border: 1px solid white;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  padding: 10px;
+  outline: none;
+  color: white;
+}
+.vote-form label{
+  color: white;
 }
 .voter-form h1 {
   font-weight: 400;
   font-size: 28px;
   margin-bottom: 32px;
+  color: white;
 }
 
 .voter-form label {
@@ -47,34 +101,44 @@
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
+  color: white;
 }
 
 .voter-form input {
   width: 100%;
-  padding: 14px;
+  padding: 10px;
   margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  /* border-radius: 40px; */
   font-size: 14px;
+  background-color: transparent;
+  outline: none;
+  color: white;
 }
 
 .regBtn {
   width: 100%;
-  background-color: var(--color-blue);
   color: white;
   padding: 14px 16px;
   border: none;
   border-radius: 40px;
   cursor: pointer;
   font-size: 14px;
-  margin-top: 12px;
+  margin-top: 20px;
   margin-bottom: 32px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: 1px solid white;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: 0.2s ease-in-out;
 }
 
 .regBtn:hover {
-  background-color: var(--color-blue-dark);
+  background-color: transparent;
+ letter-spacing: 2px;
 }
 
 /* =========media querries========== */
